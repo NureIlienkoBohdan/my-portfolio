@@ -12,6 +12,7 @@ const AboutMe = () => {
         justifyContent: "space-around",
         gap: "50px",
       }}
+      className={styles.aboutMe}
     >
       <img src="my-photo-2.jpg" alt="my-img" className={styles.myImg} />
       <div className={styles.aboutMeText}>

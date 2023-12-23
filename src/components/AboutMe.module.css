@@ -36,3 +36,13 @@
   max-width: 50%;
   text-align: justify;
 }
+
+@media only screen and (max-width: 767px) {
+  .aboutMe {
+    flex-direction: column;
+    gap: 32px;
+  }
+  .aboutMeText {
+    max-width: 100%;
+  }
+}

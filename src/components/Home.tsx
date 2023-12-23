@@ -11,6 +11,7 @@ const Home = () => {
         alignItems: "center",
         justifyContent: "center",
       }}
+      className={styles["home"]}
     >
       <div className={styles["home__text"]}>Hello, I’m Bohdan Ilienko </div>
       <div className={styles.image}>
