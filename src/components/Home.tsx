@@ -21,7 +21,7 @@ const Home = () => {
           //TODO: add a link to my CV
         >
           I'm a Full-Stack Developer <br />
-          with 2 years of work experience.
+          with 1 year of work experience.
         </div>
       </div>
     </Container>
