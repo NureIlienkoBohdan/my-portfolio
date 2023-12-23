@@ -1,4 +1,3 @@
-import { Container } from "@mui/material";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import styles from "./App.module.css";

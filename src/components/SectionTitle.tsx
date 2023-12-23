@@ -1,7 +1,11 @@
 import React from "react";
 import styles from "./SectionTitle.module.css";
 
-const SectionTitle = ({ title, height = "30px", fontSize = "20px" }) => {
+const SectionTitle: React.FC<{
+  title: string;
+  height?: string;
+  fontSize?: string;
+}> = ({ title, height = "30px", fontSize = "20px" }) => {
   return (
     <div
       className={styles.section}

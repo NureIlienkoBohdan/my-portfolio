@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./GetInTouch.module.css";
 
 const GetInTouch = () => {

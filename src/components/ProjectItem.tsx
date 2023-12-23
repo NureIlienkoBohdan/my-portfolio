@@ -1,7 +1,11 @@
 import React from "react";
 import styles from "./ProjectItem.module.css";
 
-const ProjectItem = ({ title, description, githubLink }) => {
+const ProjectItem: React.FC<{
+  title: string;
+  description: string;
+  githubLink: string;
+}> = ({ title, description, githubLink }) => {
   return (
     <div className={styles.projectComponent}>
       <div className={styles.header}>

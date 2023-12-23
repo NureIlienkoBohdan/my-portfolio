@@ -1,5 +1,3 @@
-import React from "react";
-import styles from "./SkillContainer.module.css";
 import SkillItem from "./SkillItem";
 import { Container } from "@mui/material";
 

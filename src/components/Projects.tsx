@@ -1,5 +1,3 @@
-import React from "react";
-import styles from "./Projects.module.css";
 import ProjectItem from "./ProjectItem";
 import { Container } from "@mui/material";
 
