@@ -39,9 +39,10 @@
     flex-direction: column;
     gap: 16px;
   }
+  /*   
   .navbar__links--closed {
     display: none;
-  }
+  } */
   .logo {
     width: 24px;
     height: 24px;
