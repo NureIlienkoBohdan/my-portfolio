@@ -7,10 +7,10 @@
   justify-self: center;
   gap: 32px;
   color: #1e1e1e;
-  font-family: Aileron;
+  font-family: Aileron, Inter;
   font-size: 20px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
 }
@@ -18,10 +18,10 @@
 .section__text {
   color: #1e1e1e;
   text-align: center;
-  font-family: Aileron;
+  font-family: Aileron, Inter;
   font-size: 20px;
   font-style: normal;
-  font-weight: 300;
+  font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
 }
