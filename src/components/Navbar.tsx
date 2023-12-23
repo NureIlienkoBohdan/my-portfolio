@@ -1,11 +1,24 @@
+import React from "react";
 import styles from "./Navbar.module.css";
 import { Link } from "@mui/material";
 
 const Navbar = () => {
+  const [closed, setClosed] = React.useState(false);
+
   return (
     <div className={styles.navbar}>
-      <img src="logo-dark.svg" alt="logo" className={styles.logo} />
-      <div className={styles.navbar__links}>
+      <img
+        src="logo-dark.svg"
+        alt="logo"
+        className={styles.logo}
+        onClick={() => setClosed((prev) => !prev)}
+      />
+      <div
+        className={`${
+          closed ? styles["navbar__links--closed"] : styles["navbar__links"]
+        }`}
+        id="navbar__links"
+      >
         <Link
           href="https://www.linkedin.com/in/bohdan-ilienko-692b232a5/?jobid=1234"
           underline="none"
