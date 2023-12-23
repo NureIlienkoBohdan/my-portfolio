@@ -136,5 +136,25 @@ table {
 }
 
 body {
-  background-color: #1d1e20;
+  background: #1e1e1e;
+  color: #b8ff20;
+  overflow-y: scroll;
+  /* Включаем скроллбар только по вертикали */
+}
+
+/* Стилизация скроллбара */
+
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #9adf07;
+  border-radius: 10px;
+  /* Округляем края */
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+  /* Цвет трека, через который скроллит thumb */
 }

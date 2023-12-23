@@ -1,0 +1,35 @@
+.getInTouch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 80px;
+}
+
+.getInTouchDescription {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: Inter;
+  margin-bottom: 16px;
+  max-width: 800px;
+  text-align: center;
+}
+
+.getInTouchButton {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: Inter;
+  padding: 16px 32px;
+  border-radius: 8px;
+  border: none;
+  background-color: #b8ff20;
+  color: #000000;
+  transition: all 0.5s ease-in-out;
+}
+
+.getInTouchButton:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  background-color: #000000;
+  color: #b8ff20;
+}

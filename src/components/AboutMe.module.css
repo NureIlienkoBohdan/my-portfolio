@@ -1,0 +1,38 @@
+.aboutMe {
+  display: flex;
+  /* padding: 32px 80px; */
+  justify-content: center;
+  align-items: center;
+  gap: 44px;
+}
+
+.myImg {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 10%;
+  transition: all 0.5s ease-in-out;
+  filter: brightness(0.8) saturate(1.2);
+}
+
+.myImg:hover {
+  transform: scale(1.1);
+  border-radius: 0;
+  filter: brightness(1) saturate(1);
+}
+
+.aboutMeText {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  /* color: #fff; */
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  /* text-transform: uppercase; */
+  align-self: stretch;
+  max-width: 50%;
+  text-align: justify;
+}

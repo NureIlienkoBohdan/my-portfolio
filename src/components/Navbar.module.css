@@ -1,0 +1,30 @@
+.navbar {
+  padding: 32px 80px;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #b8ff20;
+}
+
+.navbar__links {
+  display: flex;
+  align-items: center;
+  gap: 21px;
+  /* color: #1e1e1e; */
+}
+
+.navbar__links a {
+  color: #1e1e1e;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+}

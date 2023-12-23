@@ -1,0 +1,27 @@
+.section {
+  background: #b8ff20;
+  display: flex;
+  padding: 32px 0;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+  gap: 32px;
+  color: #1e1e1e;
+  font-family: Aileron;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.section__text {
+  color: #1e1e1e;
+  text-align: center;
+  font-family: Aileron;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  text-transform: uppercase;
+}

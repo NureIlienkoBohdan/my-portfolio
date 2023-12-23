@@ -1,0 +1,51 @@
+.skillComponent {
+  display: flex;
+  padding: 20px;
+  flex-direction: column;
+  gap: 24px;
+  flex: 1 0 0;
+  border-radius: 24px;
+  border: 1px solid;
+  min-width: 200px;
+  transition: all 0.5s ease-in-out;
+  max-width: 220px;
+}
+
+.skillLogo {
+  width: 64px;
+  height: 64px;
+}
+
+.skillName {
+  /* color: #fff; */
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.skillDescription {
+  /* color: #fff; */
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  /* text-transform: uppercase; */
+}
+
+.skillComponent:hover {
+  background: #b8ff20;
+  color: #000;
+  transform: scale(1.1);
+}
+
+.skillComponent:hover .skillName,
+.skillComponent:hover .skillDescription {
+  color: #000;
+}

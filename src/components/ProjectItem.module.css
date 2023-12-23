@@ -1,0 +1,56 @@
+.projectComponent {
+  display: flex;
+  padding: 25px;
+  flex-direction: column;
+  gap: 24px;
+  flex: 1 0 0;
+  border-radius: 24px;
+  border: 1px solid;
+  min-width: 240px;
+  transition: all 0.5s ease-in-out;
+  max-width: 280px;
+}
+
+.projectComponent:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  background-color: #b8ff20;
+  color: #000000;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+  font-family: Inter;
+}
+
+.githubLogo {
+  width: 24px;
+  height: 24px;
+  transition: all 0.5s ease-in-out;
+}
+
+.githubLogo:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.projectLogo {
+  width: 48px;
+  height: 48px;
+}
+
+.projectName {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: Inter;
+}
+
+.projectDescription {
+  font-size: 16px;
+  font-weight: 400;
+  font-family: Inter;
+}
