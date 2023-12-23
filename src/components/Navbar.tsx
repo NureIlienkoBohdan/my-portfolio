@@ -3,7 +3,7 @@ import styles from "./Navbar.module.css";
 import { Link } from "@mui/material";
 
 const Navbar = () => {
-  const [closed, setClosed] = React.useState(false);
+  const [closed, setClosed] = React.useState(true);
 
   return (
     <div className={styles.navbar}>
