@@ -13,8 +13,10 @@ const Navbar = () => {
 
   useEffect(
     () => {
-      if (localStorage.getItem("locale")) {
-        i18n.changeLanguage(localStorage.getItem("locale")!);
+      const locale = localStorage.getItem("i18nextLng");
+
+      if (!locale || !Object.keys(locales).includes(locale)) {
+        i18n.changeLanguage("en-US");
       }
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
