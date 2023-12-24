@@ -1,7 +1,10 @@
+import { useTranslation } from "react-i18next";
 import SkillItem from "./SkillItem";
 import { Container } from "@mui/material";
 
 const SkillContainer = () => {
+  const { t } = useTranslation();
+
   return (
     <Container
       maxWidth="lg"
@@ -17,45 +20,45 @@ const SkillContainer = () => {
       <SkillItem
         skillLogo="/skills-pictures/node-js-icon.svg"
         skillName="Node.js"
-        skillDescription="Mastering the backend with Node.js, Express.js, and MongoDB, I've crafted robust REST APIs that power my projects."
+        skillDescription={t("skills.Node.js")}
       />
       <SkillItem
         skillLogo="/skills-pictures/react-js-icon.svg"
         skillName="React"
-        skillDescription="Fueling dynamic user interfaces with React, Redux, and Next.js, I've brought engaging web experiences to life."
+        skillDescription={t("skills.React")}
       />
       <SkillItem
         skillLogo="/skills-pictures/nest-js-icon.svg"
         skillName="Nest.js"
-        skillDescription="Architecting scalable backend systems with Nest.js, TypeORM, and PostgreSQL, I've developed RESTful APIs for seamless integration."
+        skillDescription={t("skills.Nest.js")}
       />
       <SkillItem
         skillLogo="/skills-pictures/docker-icon.svg"
         skillName="Docker"
-        skillDescription="Leveraging Docker, I've containerized applications, streamlining deployment and ensuring consistent environments."
+        skillDescription={t("skills.Docker")}
       />
 
       <SkillItem
         skillLogo="/skills-pictures/kubernetes-icon.svg"
         skillName="Kubernetes"
-        skillDescription="Orchestrating scalable and resilient applications with Kubernetes, I've designed and managed clusters for efficient deployment."
+        skillDescription={t("skills.Kubernetes")}
       />
 
       <SkillItem
         skillLogo="/skills-pictures/rabbitmq-icon.svg"
         skillName="RabbitMQ"
-        skillDescription="Enhancing communication between microservices with RabbitMQ, I've implemented robust message queuing systems."
+        skillDescription={t("skills.RabbitMQ")}
       />
       <SkillItem
         skillLogo="/skills-pictures/postgresql-icon.svg"
         skillName="PostgreSQL"
-        skillDescription="Empowering data-driven applications with PostgreSQL, I've designed and managed relational database clusters."
+        skillDescription={t("skills.PostgreSQL")}
       />
 
       <SkillItem
         skillLogo="/skills-pictures/mongodb-icon.svg"
         skillName="MongoDB"
-        skillDescription="Championing flexible and scalable databases with MongoDB, I've engineered solutions for data-intensive applications."
+        skillDescription={t("skills.MongoDB")}
       />
 
       {/* <SkillItem
