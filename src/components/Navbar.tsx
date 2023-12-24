@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import styles from "./Navbar.module.css";
 import { Divider, Link } from "@mui/material";
 import { useTranslation } from "react-i18next";
@@ -9,27 +8,10 @@ const locales = {
 };
 
 const Navbar = () => {
-  // const [closed, setClosed] = React.useState(false);
-  const [isMobile, setIsMobile] = React.useState(false);
   const { t, i18n } = useTranslation();
-
-  // useEffect(() => {
-  //   const innerWidth = window.innerWidth;
-  //   if (innerWidth < 768) {
-  //     setClosed(true);
-  //   }
-  // }, []);
-
-  useEffect(() => {
-    const innerWidth = window.innerWidth;
-    if (innerWidth < 768) {
-      setIsMobile(true);
-    }
-  }, []);
 
   const changeLanguage = (locale: string) => {
     i18n.changeLanguage(locale);
-    // setClosed(true);
   };
 
   return (
@@ -77,11 +59,25 @@ const Navbar = () => {
           </Link>
           <Divider className={styles.navbar__divider} flexItem />
           <div className={styles["navbar__language-dropdown"]}>
-            <button>{locales[i18n.language].title}</button>
+            <button>
+              {
+                (
+                  locales as {
+                    [key: string]: { title: string };
+                  }
+                )[i18n.language]?.title
+              }
+            </button>
             <div className={styles["navbar__language-dropdown-content"]}>
               {Object.keys(locales).map((locale) => (
                 <button key={locale} onClick={() => changeLanguage(locale)}>
-                  {locales[locale].title}
+                  {
+                    (
+                      locales as {
+                        [key: string]: { title: string };
+                      }
+                    )[locale].title
+                  }
                 </button>
               ))}
             </div>
