@@ -1,18 +1,29 @@
 import styles from "./Navbar.module.css";
 import { Divider, Link } from "@mui/material";
 import { useTranslation } from "react-i18next";
+import { useEffect } from "react";
 
 const locales = {
-  en: { title: "English" },
-  ua: { title: "Українська" },
+  "en-US": { title: "English" },
+  "uk-UA": { title: "Українська" },
 };
 
 const Navbar = () => {
   const { t, i18n } = useTranslation();
 
-  const changeLanguage = (locale: string) => {
+  useEffect(
+    () => {
+      if (localStorage.getItem("locale")) {
+        i18n.changeLanguage(localStorage.getItem("locale")!);
+      }
+    },
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    []
+  );
+
+  function changeLanguage(locale: string) {
     i18n.changeLanguage(locale);
-  };
+  }
 
   return (
     <div className={styles.navbar}>
