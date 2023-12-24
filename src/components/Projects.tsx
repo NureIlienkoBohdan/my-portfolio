@@ -1,7 +1,10 @@
+import { useTranslation } from "react-i18next";
 import ProjectItem from "./ProjectItem";
 import { Container } from "@mui/material";
 
 const Projects = () => {
+  const { t } = useTranslation();
+
   return (
     <Container
       maxWidth="lg"
@@ -16,21 +19,17 @@ const Projects = () => {
     >
       <ProjectItem
         title={"Skillhub"}
-        description={
-          "“SkillHub” is the online – system for creative people, who want to share their creativity and learn something new about art. It was built with React, Redux, Nest.js, Docker, and PostgreSQL."
-        }
+        description={t("projects.skillhub")}
         githubLink={"https://github.com/emileyski/avpz-client"}
       />
       <ProjectItem
         title={"Pharmacy"}
-        description={`The Nest.js backend API, utilizing MS SQL, incorporates JWT for secure routes and role-based access. Swagger ensures precise REST API documentation. It generates PDF receipts, provides basic statistics on sales, and medicine popularity.`}
+        description={t("projects.pharmacy")}
         githubLink={" https://github.com/emileyski/apteka-api"}
       />
       <ProjectItem
         title={"Ticketing"}
-        description={
-          "A small microservice application that contained logic for ordering tickets for events. It was built with Node.js, React, Docker, Kubernetes, and MongoDB."
-        }
+        description={t("projects.ticketing")}
         githubLink={"https://github.com/emileyski/ticketing"}
       />
     </Container>

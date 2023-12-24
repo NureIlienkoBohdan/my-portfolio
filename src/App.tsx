@@ -6,19 +6,21 @@ import SkillContainer from "./components/SkillContainer";
 import AboutMe from "./components/AboutMe";
 import Projects from "./components/Projects";
 import GetInTouch from "./components/GetInTouch";
+import { useTranslation } from "react-i18next";
 
 function App() {
+  const { t } = useTranslation();
   return (
     <div className={styles.app}>
       <Navbar />
       <Home />
-      <SectionTitle title={"About me"} />
+      <SectionTitle title={t("about.title")} />
       <AboutMe />
-      <SectionTitle title={"My skills"} />
+      <SectionTitle title={t("skills.title")} />
       <SkillContainer />
-      <SectionTitle title={"Projects"} />
+      <SectionTitle title={t("projects.title")} />
       <Projects />
-      <SectionTitle title={"Get in touch"} />
+      <SectionTitle title={t("get-in-touch.title")} />
       <GetInTouch />
       <SectionTitle
         title="© 2023 by Bohdan Ilienko. Proudly created with React."

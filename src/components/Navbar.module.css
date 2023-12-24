@@ -11,7 +11,6 @@
   display: flex;
   align-items: center;
   gap: 21px;
-  /* color: #1e1e1e; */
 }
 
 .navbar__links a {
@@ -29,6 +28,73 @@
   height: 32px;
 }
 
+/* Добавьте следующие стили в ваш файл CSS */
+
+.navbar__language-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar__language-dropdown button {
+  background: none;
+  border: none;
+  color: #1e1e1e;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.navbar__language-dropdown::after {
+  color: #1e1e1e;
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 8px;
+  vertical-align: middle;
+  border-top: 4px solid;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+
+.navbar__language-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.navbar__language-dropdown:hover .navbar__language-dropdown-content {
+  display: block;
+}
+
+.navbar__language-dropdown-content button {
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+  border: none;
+  background: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.navbar__language-dropdown-content button:hover {
+  background: #b8ff20;
+  color: #1e1e1e;
+}
+
+.navbar__divider {
+  height: 24px;
+  width: 3px;
+  background: #1e1e1e;
+}
+
 @media only screen and (max-width: 767px) {
   .navbar {
     padding: 32px 24px;
@@ -39,12 +105,12 @@
     flex-direction: column;
     gap: 16px;
   }
-  /*   
-  .navbar__links--closed {
-    display: none;
-  } */
   .logo {
     width: 24px;
     height: 24px;
+  }
+  .navbar__divider {
+    height: 3px;
+    width: 100%;
   }
 }
