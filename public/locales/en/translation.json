@@ -31,7 +31,7 @@
     "pharmacy": "The Nest.js server-side API uses MS SQL and includes JWT for secure routes and role-based access. Swagger provides accurate REST API documentation. It creates checks in PDF format, provides basic sales and drug popularity statistics.",
     "ticketing": "A small microservice application that contains the logic for ordering tickets for events. It has a fault-tolerant architecture that provides reliable communication between microservices using RabbitMQ. The solution to the problems of parallelism is implemented. This project was created using Node.js, Express.js, MongoDB, Docker, Kubernetes, and NATS."
   },
-  "contact": {
+  "get-in-touch": {
     "title": "Get in touch",
     "paragraph": "I'm always open to new opportunities. If you want to collaborate with me or just talk, feel free to write to me.",
     "button": "Write"
