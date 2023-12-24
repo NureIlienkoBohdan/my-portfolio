@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import styles from "./Navbar.module.css";
 import { Divider, Link } from "@mui/material";
 import { useTranslation } from "react-i18next";
