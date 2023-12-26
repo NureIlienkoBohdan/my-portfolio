@@ -64,6 +64,16 @@
   font-family: Aileron, Inter;
 }
 
+.spinnerContainer {
+  position: relative;
+  width: 278px;
+  height: 278px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media only screen and (max-width: 767px) {
   .home {
     padding: 50px 20px;
