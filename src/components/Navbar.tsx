@@ -55,7 +55,7 @@ const Navbar = () => {
             GitHub
           </Link>
           <Link
-            href="https://docs.google.com/document/d/1O5xD7B-m9irfGbEfrwGsvLKtDZoENmEVkR_PztyRenM/edit"
+            href="https://drive.google.com/file/d/1eFPUaTcuhfhkZgAYc1gbUKfcll6dq8RK/view?usp=drive_link"
             underline="none"
             target="_blank"
             className={styles.navbar__link}
