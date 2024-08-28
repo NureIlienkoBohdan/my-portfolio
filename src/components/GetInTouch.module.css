@@ -20,16 +20,18 @@
   font-weight: 600;
   font-family: Inter;
   padding: 16px 32px;
+  margin-top: 10px;
   border-radius: 8px;
   border: none;
-  background-color: #b8ff20;
-  color: #000000;
+  color: #b8ff20;
+  background-color: transparent;
+  border: #b8ff20 2px solid;
   transition: all 0.5s ease-in-out;
 }
 
 .getInTouchButton:hover {
   transform: scale(1.05);
   cursor: pointer;
-  background-color: #000000;
-  color: #b8ff20;
+  background-color: #b8ff20;
+  color: #000;
 }

@@ -1,11 +1,11 @@
-import styles from "./Navbar.module.css";
-import { Divider, Link } from "@mui/material";
-import { useTranslation } from "react-i18next";
-import { useEffect } from "react";
+import styles from './Navbar.module.css';
+import { Divider, Link } from '@mui/material';
+import { useTranslation } from 'react-i18next';
+import { useEffect } from 'react';
 
 const locales = {
-  "en-US": { title: "English" },
-  "uk-UA": { title: "Українська" },
+  'en-US': { title: 'English' },
+  'uk-UA': { title: 'Українська' },
 };
 
 const Navbar = () => {
@@ -13,10 +13,10 @@ const Navbar = () => {
 
   useEffect(
     () => {
-      const locale = localStorage.getItem("i18nextLng");
+      const locale = localStorage.getItem('i18nextLng');
 
       if (!locale || !Object.keys(locales).includes(locale)) {
-        i18n.changeLanguage("en-US");
+        i18n.changeLanguage('en-US');
       }
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -55,23 +55,23 @@ const Navbar = () => {
             GitHub
           </Link>
           <Link
-            href="https://drive.google.com/file/d/1eFPUaTcuhfhkZgAYc1gbUKfcll6dq8RK/view?usp=drive_link"
+            href="https://drive.google.com/file/d/1JWyHdIi0rFyVx9Yshe2bASW_vt6S9b9q/view"
             underline="none"
             target="_blank"
             className={styles.navbar__link}
           >
-            {t("navbar.resume")}
+            {t('navbar.resume')}
           </Link>
           <Link
-            href="https://t.me/emilevi4"
+            href="https://t.me/b0urgeois"
             underline="none"
             target="_blank"
             className={styles.navbar__link}
           >
-            {t("navbar.contact")}
+            {t('navbar.contact')}
           </Link>
           <Divider className={styles.navbar__divider} flexItem />
-          <div className={styles["navbar__language-dropdown"]}>
+          <div className={styles['navbar__language-dropdown']}>
             <button>
               {
                 (
@@ -81,7 +81,7 @@ const Navbar = () => {
                 )[i18n.language]?.title
               }
             </button>
-            <div className={styles["navbar__language-dropdown-content"]}>
+            <div className={styles['navbar__language-dropdown-content']}>
               {Object.keys(locales).map((locale) => (
                 <button key={locale} onClick={() => changeLanguage(locale)}>
                   {

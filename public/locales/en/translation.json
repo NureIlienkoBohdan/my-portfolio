@@ -6,24 +6,28 @@
   "home": {
     "title": "HELLO, I’M BOHDAN ILIENKO",
     "subtitle-1": "I'm a Full-Stack Developer",
-    "subtitle-2": "with 1.5 year of work experience."
+    "subtitle-2": "with 2 year of work experience."
   },
   "about": {
     "title": "About me",
-    "paragraph-1": "I am a meticulous and reliable professional, adept at managing multiple priorities with a positive mindset. I willingly take on additional responsibilities to contribute to team goals, and my attention to detail is complemented by strong social skills that foster effective collaboration within a development team.",
-    "paragraph-2": "In my capacity as a developer, I am passionate about crafting elegant and efficient solutions to complex problems. My skill set encompasses both front-end and back-end technologies, including React, Redux, Nest.js, and expertise in microservices architecture with Kubernetes, Docker, and RabbitMQ. Throughout my career, I've successfully worked on diverse projects, ranging from simple static websites to complex enterprise-level applications.",
-    "paragraph-3": "I am well-versed in a variety of development tools such as Docker, Git and ensuring seamless project execution. Constantly seeking opportunities for professional growth, I embrace new technologies and actively pursue ways to enhance my skills and knowledge. My commitment to excellence extends to optimizing performance, improving user experience, and maintaining the highest standards of code quality in every project I undertake."
+    "paragraph-1": "I am a responsible professional who handles multiple tasks efficiently while maintaining high work efficiency. I am willing to take on additional responsibilities to contribute to team goals, and my attention to detail is complemented by strong social skills that foster effective collaboration within a development team.",
+    "paragraph-2": "As a developer, I am passionate about creating elegant and efficient solutions to complex problems. My skill set covers both front-end and back-end technologies, including React, Redux, Nest.js, as well as experience with microservices architecture with Kubernetes, Docker, and RabbitMQ. I have successfully used both relational databases such as PostgreSQL and MySQL and non-relational databases such as MongoDB and DynamoDB to develop systems with different requirements. I also have extensive experience in software testing, using Jest and Mocha for unit tests, integration tests, and e2e testing. Throughout my career, I have successfully worked on a variety of projects ranging from simple static websites to complex enterprise-level applications.",
+    "paragraph-3": "I am well-versed in various development and deployment tools such as Docker, Kubernetes, Git, GitHub Actions, and AWS (EC2, RDS, EKS, Cognito, S3 Bucket, Lambda, Amplify), ensuring smooth project execution. Constantly looking for opportunities for professional growth, I master new technologies and actively seek ways to improve my skills and knowledge. My commitment to excellence extends to optimizing performance, improving user experience, and maintaining the highest standards of code quality in every project I undertake."
   },
   "skills": {
     "title": "My skills",
     "Node.js": "Mastering the server-side with Node.js, Express.js, and MongoDB, I've created reliable REST APIs that power my projects.",
-    "React": "I use React to build high-performance and dynamic user interfaces that provide the best user experience.",
+    "React JS": "I use React to build high-performance and dynamic user interfaces that provide the best user experience.",
     "Nest.js": "Developing scalable server systems with Nest.js, TypeORM, and PostgreSQL, I've gained experience in developing RESTful APIs for seamless integration.",
     "Docker": "Using Docker, I containerized applications, simplifying deployment and providing a consistent environment.",
     "Kubernetes": "Managing scalable and fault-tolerant applications with Kubernetes, I've deployed clusters and maintained them.",
     "RabbitMQ": "Using RabbitMQ, I've built scalable systems that provide reliable communication between microservices.",
     "PostgreSQL": "With PostgreSQL, I've created reliable databases that become a solid foundation for working with information.",
-    "MongoDB": "Working with MongoDB, I've used all the advantages of NoSQL to create reliable databases."
+    "MongoDB": "Working with MongoDB, I've used all the advantages of NoSQL to create reliable databases.",
+    "AWS": "With AWS, I have worked with EC2, RDS, EKS, Cognito, S3, Lambda, Amplify, and other services for deployment, application management, and security and authentication.",
+    "TypeScript": "Utilizing TypeScript, I enhance code reliability and maintainability, streamlining the development process through static typing.",
+    "Jest & Mocha": "Using Jest and Mocha, I perform unit, integration, and e2e testing to ensure code stability and quality at all stages of development.",
+    "GraphQL": "Using GraphQL and Apollo Client, I create efficient APIs, optimizing data transfer between client and server."
   },
   "projects": {
     "title": "My projects",
